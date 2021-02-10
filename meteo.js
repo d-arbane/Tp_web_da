@@ -8,8 +8,6 @@ function showCity()
 let villeCourante="Lyon";
 */
 
-
-
 function showCity() {
  
     let nomVilleSelectionnee = document.getElementById("menu").value;
