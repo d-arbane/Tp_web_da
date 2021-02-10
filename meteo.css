@@ -1,0 +1,89 @@
+  
+          .flex{
+         
+            display:flex;
+           
+                justify-content:center;
+                flex-wrap:wrap;
+    
+            }
+           .flex div{
+           border: solid 1px black;    
+              width:250px;
+           }
+           
+             .flex div:nth-child(1){
+               display: flex;
+                 flex-wrap: wrap;
+                 flex-grow:1;
+           
+           } 
+             .flex div:nth-child(2){
+                 display: flex;
+                 flex-wrap: wrap;
+                 flex-grow:1;
+           
+           } 
+        
+             .flex div:nth-child(3){
+                display: flex;
+                 flex-wrap: wrap;
+                 flex-grow:1;
+           } 
+        
+        
+            
+         .blocMeteo{
+            
+            color:lavender;
+            background-color: gray;
+            text-align: center;
+             font-family:sans-serif;
+            }
+           #tok{
+               color:black;
+                 font-family:inherit,sans-serif;
+           }
+           #seo{
+               color:black;
+               font-family:inherit,sans-serif;
+           }
+           #lyo{
+             
+               color:black;
+               font-family:inherit,sans-serif;
+           }
+         #tokyo{
+             margin:10px 20px;
+            width:250px;
+             color:lightslategray;
+             background-color:lightcyan;
+             font-family:Arial, Helvetica, sans-serif;
+             font-size: medium;
+             display: none;
+             text-align: center;
+         }
+         #seoul{
+             margin:10px 20px;
+             width:250px;
+             color:lightslategray;
+             background-color:lightcyan;
+               font-family:Arial, Helvetica, sans-serif;
+               font-size: medium;
+               display: none;
+               text-align: center;
+          }
+          #lyon{
+              margin:10px 20px;
+               width:250px;
+             color:lightslategray;
+             background-color:lightcyan;
+                font-family:Arial, Helvetica, sans-serif;
+                font-size: medium;
+                display: none;
+                text-align: center;
+          }
+          #so{
+          background-color:lavender;
+                font-family:monospace,sans-serif;
+          }

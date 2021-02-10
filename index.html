@@ -4,130 +4,45 @@
 	  <!--<charset="UTF-8"> -->
         <meta charset="UTF-8"/>
       <title>Tp Web</title>
-     <style>
-        
-         
-          .flex{
-         
-         display:flex;
-        <!-- width:900px;-->
-             justify-content:center;
-             flex-wrap:wrap;
-           
-              
-            
-         }
-        .flex div{
-        border: solid 1px black;    
-           
-        }
-        .flex div:nth-child(1){
-        width:1300px;
-        
-        } 
-          .flex div:nth-child(2){
-            display: flex;
-              flex-wrap: wrap;
-              flex-grow:1;
-        
-        } 
-          .flex div:nth-child(3){
-              display: flex;
-              flex-wrap: wrap;
-              flex-grow:1;
-        
-        } 
-     
-          .flex div:nth-child(4){
-             display: flex;
-              flex-wrap: wrap;
-              flex-grow:1;
-        } 
-     
-     
-         
-      .blocMet{
-           margin:10px 20px;       
-        width:250px;
-         color:lavender;
-         background-color: indigo;
-         text-align: center;
-          font-family:sans-serif;
-         }
-        #tok{
-            color:black;
-              font-family:inherit,sans-serif;
-        }
-        #seo{
-            color:black;
-            font-family:inherit,sans-serif;
-        }
-        #lyo{
-          
-            color:black;
-            font-family:inherit,sans-serif;
-        }
-      .blocTok{
-          margin:10px 20px;
-         width:250px;
-          color:blueviolet;
-          background-color:thistle;
-          font-family:cursive,sans-serif;
-          font-size:
-      }
-      .blocSeo{
-          margin:10px 20px;
-          width:250px;
-          color:blueviolet;
-          background-color:thistle;
-            font-family:cursive,sans-serif;
-       }
-       .blocLyo{
-           margin:10px 20px;
-            width:250px;
-          color:blueviolet;
-          background-color:thistle;
-             font-family:cursive,sans-serif;
-       }
-       #source{
-       background-color:lavender;
-             font-family:monospace,sans-serif;
-       }
-    
-     </style>
-        
-        <script>
-         function showCity()
-            { alert(villeCourante);      
-            
-            }
-        let villeCourante="Lyon";
-        </script>
-	 </head>
 
-	 <body onload="showCity()">
-         
-       <div class="flex">
-       <div class="blocMet">
-            <h1 >Météo</h1>
-	  <!--<p>My first paragraph.</p>-->
-           </div>
-	   
-      <div class="blocTok">
+   <script src="meteo.js"></script>
+   <link rel="stylesheet" href="meteo.css"/>
+
+	 
+   
+
+	 <body>
+    <h1 class="blocMeteo">Météo</h1>
+    <label for="Ville-select">
+      Choisis une ville:
+    </label>
+    <select  id ="menu" onchange=showCity()>
+     <option value="">--veuillez choisir une ville--</option>
+     <option value="lyon">Lyon</option>
+     <option value="tokyo">Tokyo</option>
+     <option value="seoul">Seoul</option>
+     
+    </select>  
+
+
+
+        <div class="flex">
+      <div class="city" id="tokyo">
       <h2><strong>Tokyo</strong></h2>
       <p id="tok">
-      <img src="Nuage_de_Pluie.png" width =50 alt="Temps pluvieux en soiree"><br>
+      <img src="Nuage_de_Pluie.png" width =50 alt="Temps pluvieux en soiree">
+      <br>
       <strong>7°</strong> Pluvieux </p>
       </div>
 
-      <div class="blocSeo">    
+      <div  class="city" id="seoul">    
       <h2><strong>Seoul</strong></h2>
       <p id="seo">
-      <img src="Soleil.png" width =50 alt="Temps ensoleillée ">
+      <img src="Soleil.png" width =50 alt="Temps ensoleillée "><br>
       <strong>-1° </strong> Ensoleillé</p>  
       </div>
 
-      <div class="blocLyo"> 
+      <div class="city" id="lyon"> 
       <h2><strong>Lyon</strong></h2>
       <p id="lyo">
       <img src="Nuages.png" width =50 alt="Temps nuageux en journee"><br>
@@ -135,11 +50,12 @@
       </div>
       </div>
      <footer>
-        <p id="source"> @Dehbia ARBANE <br>
+        <p id="so"> @Dehbia ARBANE <br>
             Icones météo par
            <a href="https://thenounproject.com/search/collection/?q=weather">Noun Project</a>
          </p>
      </footer>
       
 	</body>
+</head>
 </html>
